@@ -105,9 +105,14 @@ SSH into the control node and follow the steps below:
 - Update the hosts file under /etc/ansible to have the two web vm's under webservers and the elk server under elk as shown in the pictures below.
 
 
-![webserver host image](images/ansible_hosts_webservers)
+![webserver host image](Images/ansible_hosts_webservers.PNG)
+
+
+![elk host image](Images/Ansible_hosts_elk.PNG)
 
 - Update the install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
+
+![elk host in yaml file]
 - Run the playbooks, and navigate to http://[your_VM_IP]:5601 to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
