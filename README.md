@@ -101,10 +101,10 @@ In order to use the playbooks, you will need to have an Ansible control node alr
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml and the metricbeat-config.yml file to /etc/ansible
 - Edit ["ELK_VM_IP:9200"] after hosts under the Elasticsearch output section in both config files as shown:
-![Editing the Elastic Search host]()
+![Editing the Elastic Search host](Images/Elastic_Search_Edit.PNG)
 
 - Edit "ELK_VM_IP:5601" under the kibana section, directly below the "setup.kibana:" line in both config files as shown:
-![Editing the Kibana host]()
+![Editing the Kibana host](Images/Kibana_Edit.PNG)
 
 - Update the hosts file under /etc/ansible to have the two web vm's under webservers and the elk server under elk as shown in the pictures below.
 
