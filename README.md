@@ -6,7 +6,7 @@ Documentation for an Azure Virtual Network Setup deploying multiple web servers 
 
 The files in this repository were used to configure the network depicted below.
 
-![Finalized-ELK-Deployment](Diagrams/Finalized-Deployment.PNG)
+![Finalized-ELK-Deployment](Diagrams/Finalized_Deployment.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the README.md file may be used to install only certain pieces of it, such as Filebeat.
 
