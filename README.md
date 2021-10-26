@@ -74,7 +74,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | Host/Workstation Public IP   |
 | Web-1    | No                  | 10.0.0.6             |
 | Web-2    | No                  | 10.0.0.6             |
-|ELK Server| Yes                 | 10.0.0.6             |
+|ELK Server| Yes                 | 10.0.0.6 / Host Public IP    |
 
 ### Elk Configuration
 
