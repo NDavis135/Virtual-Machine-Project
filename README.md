@@ -6,7 +6,7 @@ Documentation for an Azure Virtual Network Setup deploying multiple web servers 
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Virtual-Machine-Project/Diagrams/Finalized-Deployment.PNG)
+![TODO: Update the path with the name of your diagram](https://github.com/NDavis135/Virtual-Machine-Project/blob/main/Diagrams/Finalized-Deployment.PNG?raw=true)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
