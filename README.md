@@ -122,7 +122,7 @@ SSH into the control node and follow the steps below:
 ![webserver host image](Images/ansible_hosts_webservers.PNG)
 ![elk host image](Images/Ansible_hosts_elk.PNG)
 
-- Update the [install-elk.yml](Ansible/install-elk.yml), [filebeat-playbook.yml](filebeat-playbook.yml), and [metricbeat-playbook.yml](metricbeat-playbook.yml) to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
+- Update the [install-elk.yml](Ansible/install-elk.yml), [filebeat-playbook.yml](Ansible/filebeat-playbook.yml), and [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml) to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
 
 ![webserver host in yaml file](Images/webserver_yaml_host_example.PNG)
 ![elk host in yaml file](Images/elk_yaml_host_example.PNG)
