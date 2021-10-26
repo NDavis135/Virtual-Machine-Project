@@ -95,17 +95,17 @@ These Beats allow us to collect the following information from each machine:
 - _Filebeat collects log data, sends these logs to logstash and elastic search, and then gets visualized in dashboards in Kibana. An example of something you could expect to see from this data is successful and failed ssh attempts into the web servers._
 - _Metricbeat on the other hand looks at system metrics of the box it is located on, that is then sent on to logstash and elastic search.  This information can also be viewed and queried in Kibana.  An expected example of something you may see from metricbeat data is the cpu usage and other system health indicators._   
 
-### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+### Using the Playbooks
+In order to use the playbooks, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the filebeat-config.yml and the metricbeat-config.yml file to /etc/ansible
+- Edit ["ELK_VM_IP:9200"] after hosts under the Elasticsearch output section in both config files as shown:
+- Edit "ELK_VM_IP:5601" under the kibana section, directly below the "setup.kibana:" line in both config files as shown:
+- Update the hosts file under /etc/ansible to have the two web vm's under webservers and the elk server under elk as shown in the picture below.
+![webserver host image](
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Update the install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
+- Run the playbooks, and navigate to http://[your_VM_IP]:5601 to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
