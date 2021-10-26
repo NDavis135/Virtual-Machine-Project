@@ -39,16 +39,18 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-|          |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.6 / 20.115.163.105  | Linux            |
+| Web-1    |Web Server| 10.0.0.7 / 20.115.119.160   | Linux            |
+| Web-2    |Web Server| 10.0.0.8   | Linux            |
+| ELK      |ELK Server| 10.1.0.4   | Linux            |
+|Load Balancer|Load Balancer|Static External IP| Linux|
+|Host / WorkStation|Access Control|Public IP| Linux, Mac, or Windows|
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the  machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
