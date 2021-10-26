@@ -80,17 +80,20 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/Docker_ps.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- _Web-1  10.0.0.7_
+- _Web-2  10.0.0.8_
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- _Filebeat_
+- _Metricbeat_
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- _Filebeat collects log data, sends these logs to logstash and elastic search, and then gets visualized in dashboards in Kibana. An example of something you could expect to see from this data is successful and failed ssh attempts into the web servers._
+- _Metricbeat on the other hand looks at system metrics of the box it is located on, that is then sent on to logstash and elastic search.  This information can also be viewed and queried in Kibana.  An expected example of something you may see from metricbeat data is the cpu usage and other system health indicators._   
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
