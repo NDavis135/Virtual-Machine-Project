@@ -109,7 +109,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbooks, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml and the metricbeat-config.yml file to /etc/ansible
+- Copy the [filebeat-config.yml](Ansible/filebeat-config.yml) and the [metricbeat-config.yml](Ansible/metricbeat-config.yml) file to /etc/ansible
 - Edit ["ELK_VM_IP:9200"] after hosts under the Elasticsearch output section in both config files as shown:
 ![Editing the Elastic Search host](Images/Elastic_Search_Edit.PNG)
 
@@ -122,7 +122,7 @@ SSH into the control node and follow the steps below:
 ![webserver host image](Images/ansible_hosts_webservers.PNG)
 ![elk host image](Images/Ansible_hosts_elk.PNG)
 
-- Update the install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
+- Update the [install-elk.yml](Ansible/install-elk.yml), [filebeat-playbook.yml](filebeat-playbook.yml), and [metricbeat-playbook.yml](metricbeat-playbook.yml) to include the group of machines you are wanting to run the ansible playbook against (webservers or elk). Example Below:
 
 ![webserver host in yaml file](Images/webserver_yaml_host_example.PNG)
 ![elk host in yaml file](Images/elk_yaml_host_example.PNG)
