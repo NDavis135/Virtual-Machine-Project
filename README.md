@@ -112,6 +112,10 @@ SSH into the control node and follow the steps below:
 
 ![webserver host in yaml file](Images/webserver_yaml_host_example.PNG)
 ![elk host in yaml file](Images/elk_yaml_host_example.PNG)
-- Run the playbooks, and navigate to http://[your_VM_IP]:5601 to check that the installation worked as expected.
+- Run the playbooks with command given below, and navigate to http://[your_VM_IP]:5601 to check that the installation worked as expected as depicted in the image.
+
+![Running a playbook](Images/running_playbook.PNG)
+
+![ELK Setup Success](Images/ELKSetup_Success.PNG)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
