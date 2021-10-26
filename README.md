@@ -72,9 +72,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _Ansible allows IT admins to automate daily tasks and cut away lots of the mind-numbing repetive tasks that can waste tons of time. For example if you needed to update 200 servers that your company was running, doing that manually would be tedious and time wasting, but with ansible it is as easy as writing one ansible playbook and depolying it._
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- _Install Docker_
+- _Install python3-pip_
+- _Install Docker python module_
+- _Set the vm.max_map_count to 262144 to use more memory_
+- _Download and launch the docker elk container_
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
