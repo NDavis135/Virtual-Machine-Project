@@ -1,0 +1,18 @@
+#!/bin/bash
+
+my_states=("Colorado" "California" "Hawaii" "South Carolina" "North Carolina")
+ishawaii=0
+for i in ${my_states[@]};
+do
+        if [ $i == "Hawaii" ]
+        then
+                ishawaii=1
+        fi
+done
+
+if [ $ishawaii=1 ]
+        then
+        echo "Hawaii is the best!"
+else
+        echo "I am not fond of Hawaii"
+fi

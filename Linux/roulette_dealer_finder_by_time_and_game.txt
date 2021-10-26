@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $1 = 'R' ]
+then
+	grep "$2" 0310_Dealer_schedule 0312_Dealer_schedule 0315_Dealer_schedule | awk -F' ' '{print $1, $2, $5, $6}' | grep $3
+
+elif [ $1 = 'B' ]
+then
+	grep "$2" 0310_Dealer_schedule 0312_Dealer_schedule 0315_Dealer_schedule | awk -F' ' '{print $1, $2, $3, $4}' | grep $3
+
+elif [ $1 = 'T' ]
+then
+	grep "$2" 0310_Dealer_schedule 0312_Dealer_schedule 0315_Dealer_schedule | awk -F' ' '{print $1, $2, $7, $8}' | grep $3
+fi
