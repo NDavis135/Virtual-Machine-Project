@@ -64,7 +64,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - _Host/Workstation's Public IP address_
 
 Machines within the network can only be accessed by the Jumpbox VM.
-- _The ELK Server is only acessible from the Jumpbox VM and via a TCP connection on port 5601 used for Kibana._
+- _The ELK Server is only acessible from the Jumpbox VM and via a TCP connection on port 5601 by your host/workstation, which is used for kibana._
 - _Both Web-1 and Web-2 are only accessible from the Jumpbox VM._
 
 A summary of the access policies in place can be found in the table below.
