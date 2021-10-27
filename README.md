@@ -131,5 +131,3 @@ SSH into the control node and follow the steps below:
 ![Running a playbook](Images/running_playbook.PNG)
 
 ![ELK Setup Success](Images/ELKSetup_Success.PNG)
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
