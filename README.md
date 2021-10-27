@@ -42,7 +42,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _What does Filebeat record?_
 Filebeat allows monitoring of system logs that you specify and sends those requests to Logstash and Elastic Search to be queried and searched by Kibana.
 - _What does Metricbeat record?_
-Metricbeat takes metrics and statisical information dealing with the health and usage of the system and forwards them off to Logstash and Elastic Search to be queried by Kibana. 
+Metricbeat takes metrics and statistical information dealing with the health and usage of the system and forwards them off to Logstash and Elastic Search to be queried by Kibana. 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
